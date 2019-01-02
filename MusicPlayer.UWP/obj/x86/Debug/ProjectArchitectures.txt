@@ -1,0 +1,1 @@
+C:\Alin\RepoXanmarin\MusicPlayer\MusicPlayer\MusicPlayer.UWP\MusicPlayer.UWP.csproj;x86
