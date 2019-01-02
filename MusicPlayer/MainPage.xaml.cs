@@ -10,20 +10,28 @@ namespace MusicPlayer
 	public partial class MainPage : ContentPage
 	{
         ISimpleAudioPlayer player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+        private Label _CronoTime;
         public MainPage()
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
+            _CronoTime = this.FindByName<Label>("CronoTime");
             //Player load my default song.
             player.Load("M1.mp3");
         }
 
-        
+
         void Play_Button_Clicked(object sender, EventArgs e)
         {
             //Play my default song.
             //**Specificatii cand dau play stiu cat dureaza melodia.
             //Cand 
             player.Play();
+            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            {
+                Device.BeginInvokeOnMainThread(() => _CronoTime.Text = DateTime.Now.ToString());
+                //CronoTime.Text = ++counter.ToString());
+                return true;
+            });
         }
 
         void Pause_Button_Clicked(object sender, EventArgs e)
