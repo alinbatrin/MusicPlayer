@@ -5,10 +5,12 @@
              x:Class="MusicPlayer.MainPage">
 
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Button x:Name="Play_Button" Text="PlaySong" Clicked="Play_Button_Clicked"   />
-        <Button x:Name="Pause_Button" Text="PauseSong" Clicked="Pause_Button_Clicked"   />
-        <Button x:Name="Stop_Button" Text="PauseSong" Clicked="Stop_Button_Clicked"   />
-
+        <Button x:Name="Play_Button" Text="Play Song" Clicked="Play_Button_Clicked"   />
+        <Button x:Name="Pause_Button" Text="Pause Song" Clicked="Pause_Button_Clicked"   />
+        <Button x:Name="Stop_Button" Text="Stop Song" Clicked="Stop_Button_Clicked"   />
+        <Slider x:Name="Slider" Maximum="100" Scale="1" ValueChanged="Slider_Changed" />
+        <Label x:Name="CronoTime" Text="CronoTime" />
+        <Label x:Name="SongTime" Text="SongTime" />
     </StackLayout>
         
 </ContentPage>

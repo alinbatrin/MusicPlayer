@@ -21,6 +21,8 @@ namespace MusicPlayer
         void Play_Button_Clicked(object sender, EventArgs e)
         {
             //Play my default song.
+            //**Specificatii cand dau play stiu cat dureaza melodia.
+            //Cand 
             player.Play();
         }
 
@@ -34,6 +36,14 @@ namespace MusicPlayer
         {
             //Pause my default song.
             player.Stop();
+        }
+
+        void Slider_Changed(object sender, EventArgs e)
+        {
+            var _sliderValue = ((Slider)sender).Value;
+            var _songLength = player.Duration;
+
+            player.Seek((_sliderValue * _songLength) / 100);
         }
     }
 }
