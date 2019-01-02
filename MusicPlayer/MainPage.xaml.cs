@@ -20,6 +20,7 @@ namespace MusicPlayer
         
         void Play_Button_Clicked(object sender, EventArgs e)
         {
+
             //Play my default song.
             player.Play();
         }
