@@ -20,7 +20,6 @@ namespace MusicPlayer
         
         void Play_Button_Clicked(object sender, EventArgs e)
         {
-
             //Play my default song.
             player.Play();
         }
@@ -29,6 +28,12 @@ namespace MusicPlayer
         {
             //Pause my default song.
             player.Pause();
+        }
+
+        void Stop_Button_Clicked(object sender, EventArgs e)
+        {
+            //Pause my default song.
+            player.Stop();
         }
     }
 }

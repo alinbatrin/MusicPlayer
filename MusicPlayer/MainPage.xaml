@@ -5,8 +5,9 @@
              x:Class="MusicPlayer.MainPage">
 
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-        <Button x:Name="PlaySong" Text="PlaySong" Clicked="Play_Button_Clicked"   />
-        <Button x:Name="PauseSong" Text="PauseSong" Clicked="Pause_Button_Clicked"   />
+        <Button x:Name="Play_Button" Text="PlaySong" Clicked="Play_Button_Clicked"   />
+        <Button x:Name="Pause_Button" Text="PauseSong" Clicked="Pause_Button_Clicked"   />
+        <Button x:Name="Stop_Button" Text="PauseSong" Clicked="Stop_Button_Clicked"   />
 
     </StackLayout>
         
