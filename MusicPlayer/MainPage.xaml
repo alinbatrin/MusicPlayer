@@ -6,11 +6,10 @@
 
     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
         <Button x:Name="Play_Button" Text="Play Song" Clicked="Play_Button_Clicked"   />
-        <Button x:Name="Pause_Button" Text="Pause Song" Clicked="Pause_Button_Clicked"   />
+        <Button x:Name="Pause_Button" Text="Pause Song - In Progress" Clicked="Pause_Button_Clicked"   />
         <Button x:Name="Stop_Button" Text="Stop Song" Clicked="Stop_Button_Clicked"   />
         <Slider x:Name="Slider" Maximum="100" Scale="1" ValueChanged="Slider_Changed" />
-        <Label x:Name="CronoTime" Text="CronoTime" />
-        <Label x:Name="SongTime" Text="SongTime" />
+        <Label x:Name="CronoTime" Text="00:00" />
+        <Label x:Name="SongTime" Text="00:00" />
     </StackLayout>
-        
 </ContentPage>
